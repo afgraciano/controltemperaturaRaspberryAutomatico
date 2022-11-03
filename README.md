@@ -25,10 +25,15 @@ para cargar los archivos en la raspberry para que quede de forma automatica, se 
 los siguientes comandos en terminal desde la carpeta donde tenemos los archivos descargados:
 
 sudo mv fancontrol.py /usr/local/bin/
+
 sudo chmod +x /usr/loca/bin/fancontrol.py
+
 sudo mv fancontrol.sh /etc/init.d/
+
 sudo chmod +x /etc/init.d/fancontrol.sh
+
 sudo update-rc.d fancontrol.sh defaults
+
 sudo /etc/init.d/fancontrol.sh start
 
 estos comandos cargan los archivos a las carpetas donde se van a ejecutar de forma automatica y 
